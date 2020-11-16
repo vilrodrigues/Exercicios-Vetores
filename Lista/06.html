@@ -1,0 +1,39 @@
+<script src="06.js"></script>
+<script>
+    
+
+var x = [],
+    i = 0, 
+    j = 0, 
+    temp;
+
+//Leitura do Vetor
+
+    for(i = 0; i < 10; i++){
+       
+    x[i] = Number(prompt("Digite um numero:"));
+    }
+
+//Ordenando o vetor
+
+    for (i = 0; i < 10; i++){
+        for(j = i + 1; j < 10; j++){
+
+            if (x[i] > x[j]){
+            
+            temp = x[i];
+            x[i] = x[j];
+            x[j] = temp;
+            }
+        }
+}
+
+//Impressão do Vetor Ordenado 
+ 
+document.write("Vetor em ordem crescente: <br>");
+        for(i = 0; i < 10; i++){
+        
+        document.write(x[i]);
+        }
+
+</script>
